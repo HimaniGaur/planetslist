@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 
 @Component({
@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./favourites.component.css']
 })
 export class FavouritesComponent implements OnInit {
-
+  favList: any =[];
   constructor() { }
 
   ngOnInit(): void {
-  }
 
+  }
 }

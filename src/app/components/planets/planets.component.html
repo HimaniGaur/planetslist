@@ -1,9 +1,5 @@
-<div class="wrapper">
-    <h2 ng-app="getData()">List of planets</h2>
-</div>
 
-<div class="listdesign" *ngFor="let item of data">
-<h3>
-   {{ item.name }}
- </h3>
+<h2 align="center">All Planets</h2>
+<div align="center" *ngFor="let planet of data" >
+  <mat-checkbox align="justify"  style="font-size : large" (change)="onSelect($event,planet)">{{planet.name}}</mat-checkbox>
 </div>
